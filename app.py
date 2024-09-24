@@ -4,12 +4,13 @@ import requests
 
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=318950068d02c0404f88480caefd6ac7&language=en-US".format(movie_id)
-    data = requests.get(url)
-    data = data.json()
-    poster_path = data['poster_path']
-    full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
-    return full_path
+#     url = "https://api.themoviedb.org/3/movie/{}?api_key=318950068d02c0404f88480caefd6ac7&language=en-US".format(movie_id)
+#     data = requests.get(url)
+#     data = data.json()
+#     poster_path = data['poster_path']
+#     full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
+#     return full_path
+        return "Photo.jpg" 
 
 
 
